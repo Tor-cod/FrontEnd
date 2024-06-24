@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body class="bg-primary p-0 text-dark bg-opacity-10">
+    <!-- Inicio del menu -->
+    <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-dark bg-dark">
+        <div class="container-fluid">
+        <!-- icono o nombre -->
+
+        <a class="navbar-brand" href="#" id="header-navbar">
+        <i class="bi bi-flower1"></i>
+        <span class="text-warning">Nova Web</span>
+        </a>
+            
+        <!-- boton del menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- elementos del menu colapsable -->
+
+        <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../Menu.html" id="Inicio-page">Inicio</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Promoción
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Personas.html" id="Registro-page">Personas</a><li> 
+                  <li><a class="dropdown-item" href="Solicitud.html" id="Solicitud-page">Solicitud de Crédito</a><li></li>  
+                  <li><a class="dropdown-item" href="Checklist.html" id="Checklist-page">CheckList</a></li>
+                  <li><a class="dropdown-item" href="Formatos.html" id="Checklist-page">Formatos</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Crédito
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Lineas.html" id="Registro-page">Lineas de Crédito</a><li> 
+                  <li><a class="dropdown-item" href="Disposicion.html" id="Solicitud-page">Disposición de Crédito</a><li></li>  
+                  <li><a class="dropdown-item" href="Garantias.html" id="Checklist-page">Garantías</a></li>
+                  <li><a class="dropdown-item" href="Contratos.html" id="Checklist-page">Contrato de Crédito</a></li>
+                  <li><a class="dropdown-item" href="Reportescred.html" id="Checklist-page">Reportes</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mesa de Control
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Expedientes.html" id="Registro-page">Expedientes</a><li> 
+                  <li><a class="dropdown-item" href="Autorizaciones.html" id="Solicitud-page">Autorizaciones</a><li></li>  
+                  <li><a class="dropdown-item" href="reportesmesa.html" id="Checklist-page">Reportes</a></li>
+                </ul>
+              </li>
+              
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="Tesoreria-page">Tesorería</a>
+            </li>
+        </ul>
+
+        <hr class="d-md-none text-white-50">
+
+        <!-- enlaces redes sociales -->
+
+        <ul class="navbar-nav  flex-row flex-wrap text-light">
+
+        <li class="nav-item col-6 col-md-auto p-3">
+                <i class="bi bi-twitter"></i>
+                <small class="d-md-none ms-2">Twitter</small>  
+            </li>
+
+            <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-github"></i>
+            <small class="d-md-none ms-2">GitHub</small> 
+            </li>
+
+            <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-whatsapp"></i>
+            <small class="d-md-none ms-2">WhatsApp</small>
+            </li>
+
+            <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-facebook"></i>
+            <small class="d-md-none ms-2">Facebook</small>
+            </li>
+
+        </ul>
+        
+        <!--boton Informacion -->
+        <form class="d-flex">
+            <button class="btn btn-outline-warning d-none d-md-inline-block " type="submit">Informacion</button>
+        </form>
+        </div>
+        </div>  
+    </nav>
+    <div class="container">
+        <!-- TIPO DE PERSONA radio button-->
+        <div class="row m-1">
+            <h2>Solicitud de Crédito</h2>
+            <div class="row">
+                <h4  class="col-3 m-sm-auto">Tipo de Persona:</h4>
+
+                <div class="form-check col-2 m-sm-auto">
+                    <input class="form-check-input" type="radio" 
+                    id="flexSwitchCheckDefault" name="modalRadio" value="modal1">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Persona Física</label>
+                </div>
+
+                <div class="form-check col-2 m-sm-auto">
+                    <input class="form-check-input" type="radio" 
+                    id="flexSwitchCheckDefault" name="modalRadio" value="modal2">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Persona Moral</label>
+                </div>
+
+                <form class="d-flex col-5 m-sm-auto">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="row">
+            <form  class="container list-group col-12 mx-md-5">
+                <input class="form-control me-2" type="search" placeholder="Nombre o Razón Social" aria-label="Search">
+            </form>
+        </div>
+    </div>
+    <div class="row m-0">
+        <!-- BOTONES: SOLICITUD -->
+        <div class="container row m-3 list-group col-3 mx-md-5">
+            <!-- BOTON LLAMA MODAL DATOS DE LA SOLICITUD -->
+            <button id="openModalBtn" type="button" class="btn btn-outline-success" 
+                data-bs-toggle="modal" data-bs-target="#datosolicitud">
+                Datos de la Solicitud
+            </button>
+
+            <!-- BOTON LLAMA MODAL AVALES -->
+            <button id="openModalBtn"  type="button" class="btn btn-outline-success" 
+            data-bs-toggle="modal" data-bs-target="#avales">
+            Avales
+            </button>
+        </div>
+
+        <!-- Modal DATOS GENERALES DE LA SOLICITUD -->
+        <div id="datosolicitud" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+            aria-labelledby="datosolicitudpfLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" >Datos de la Solicitud de Crédito</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body  bg-secondary p-2 text-dark bg-opacity-25">
+                        <form class="row g-3 needs-validation" id="formulario1" novalidate>
+
+                            <div class="col-3">
+                                <label for="importesol" class="form-label-sm">Importe Solicitado</label>
+                                <input type="number" class="form-control form-control-sm text-uppercase" 
+                                id="importesol" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"
+                                onchange="calculaRFC();" required>
+                                <div class="valid-feedback">
+                                        
+                                </div>
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="plazo" class="form-label-lg">Plazo</label>
+                                        <input id="genero" class="form-select form-select-sm"" list="lista" placeholder="Seleccione..." required>
+                                        <datalist id="lista">
+                                            <option value="Días" id="dias">
+                                            <option value="Meses" id="meses">
+                                            <option value="Años" id="aos"></option>
+                                        </datalist> 
+                                     </div>
+                                     <div class="col-2">
+                                        <label for="plazo" class="form-label-lg"></label>
+                                        <input type="number" class="form-control form-control-sm text-uppercase" 
+                                        id="plazodato" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"> 
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="ciclo" class="form-label-sm">Ciclo</label>
+                                        <input type="number" class="form-control form-control-sm text-uppercase" 
+                                        id="ciclo" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"
+                                        onchange="calculaRFC();" required>
+                                        <div class="valid-feedback">
+                                                
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                  
+                            <div class="col-3">
+                                <label for="aport" class="form-label-sm">Aportación Solicitante</label>
+                                <input type="number" class="form-control form-control-sm text-uppercase" 
+                                id="aport" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"
+                                onchange="calculaRFC();" required>
+                                <div class="valid-feedback">
+                                        
+                                </div>
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <label for="otrasap" class="form-label-sm">Otras Aportación</label>
+                                <input type="number" class="form-control form-control-sm text-uppercase" 
+                                id="otrasap" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"
+                                onchange="calculaRFC();" required>
+                                <div class="valid-feedback">
+                                        
+                                </div>
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <label for="totproy" class="form-label-sm">Total del Proyecto</label>
+                                <input type="number" class="form-control form-control-sm text-uppercase" 
+                                id="totproy" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"
+                                onchange="calculaRFC();" required>
+                                <div class="valid-feedback">
+                                        
+                                </div>
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="destino" class="form-label-sm">Destino del Financiemiento</label>
+                                <input id="destino" class="form-select form-select-sm"" list="listad" placeholder="Seleccione..." required>
+                                <datalist id="listad">
+                                    <option value="1" id="dest1">
+                                    <option value="2" id="dest2">
+                                    <option value="3" id="dest3"></option>
+                                </datalist>
+                                <div class="valid-feedback">
+                                  
+                                </div>
+                                <div class="invalid-feedback">
+                                   
+                                </div>
+                            </div>
+                           
+                            <div class="col-6">
+                                <label for="objetproy" class="form-label-sm">Objetivo Principal del Proyecto</label>
+                                <input id="objetproy" class="form-select form-select-sm"" list="listad" placeholder="Seleccione..." required>
+                                <datalist id="listad">
+                                    <option value="1" id="dest1">
+                                    <option value="2" id="dest2">
+                                    <option value="3" id="dest3"></option>
+                                </datalist>
+                                <div class="valid-feedback">
+                                  
+                                </div>
+                                <div class="invalid-feedback">
+                                   
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="sector" class="form-label-lg">Sector Productivo</label>
+                                        <input id="sector" class="form-select form-select-sm"" list="listasp" placeholder="Seleccione..." required>
+                                        <datalist id="listasp">
+                                            <option value="Primario" id="dias">
+                                            <option value="Secundario" id="meses">
+                                            <option value="Terciario" id="aos"></option>
+                                        </datalist> 
+                                     </div>
+                                     <div class="col-9">
+                                        <label for="subsector" class="form-label-lg">Sub-Sector</label>
+                                        <input id="subsector" class="form-select form-select-sm"" list="listass" placeholder="Seleccione..." required>
+                                        <datalist id="listass">
+                                            <option value="Agricultura, cría y explotación de animales, aprovechamiento forestal, pesca y caza" id="dias">
+                                            <option value="Minería, Generación, transmisión y distribución, Construcción, Industrias manufactureras" id="meses">
+                                            <option value="Comercio, Servicios" id="aos"></option>
+                                        </datalist> 
+                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label for="nombre" class="form-label-sm">Descripción de la Activdad del Negocio</label>
+                                <input type="text" class="form-control form-control-sm text-uppercase" 
+                                id="nombre" name="nombre" onkeyup="un_espcio(this);" 
+                                onblur="quita_espcio_final(this);" onchange="calculaRFC();" required>
+                                <div class="valid-feedback">
+                                    
+                                </div>
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="submit" onclick=" return validar();" 
+                                class="btn btn-success">Guardar Cambios</button>
+                                <button type="submit" onclick=" return validar();" 
+                                class="btn btn-warning">Modificar</button>
+                                <button type="reset" class="btn btn-secondary">Limpiar</button>
+                                <button type="reset" onclick=" return validar();" class="btn btn-danger" 
+                                data-bs-dismiss="modal">Cerrar</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal DATOS AVALES -->
+        <style>
+            .input-column {
+              display: none;
+            }
+        </style>
+        <div id="avales" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+            aria-labelledby="avalesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" >Avales</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        
+                        <form class="row g-3 needs-validation" id="formulario1" novalidate>
+                            <!-- TIPO DE PERSONA -->
+                            <div class="row">
+                                <h5  class="col-4 m-sm-auto">Tipo de Persona:</h5>
+            
+                                <div class="form-check col-4 m-sm-auto">
+                                    <input class="form-check-input" type="radio" 
+                                    name="radioBtn" id="radio1">
+                                    <label class="form-check-label" for="radio1">
+                                    Persona Física</label>
+                                </div>
+            
+                                <div class="form-check col-4 m-sm-auto">
+                                    <input class="form-check-input" type="radio" 
+                                    name="radioBtn" id="radio2">
+                                    <label class="form-check-label" for="radio2">
+                                    Persona Moral</label>
+                                </div>
+            
+                            </div>
+                            
+                            <!-- AVALES PERSONAS FISICAS -->
+                            <div id="inputBoxContainer">
+                                <div class="row input-column">
+                                    <div class="row">
+                                        <div class="col-sm-3 form-group">
+                                            <label for="input1" class="form-label-sm">Primer Nombre</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="input1" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                                
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-sm-3 form-group">
+                                            <label for="input2" class="form-label-sm">Segundo Nombre</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="input2" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);">
+                                            <div class="valid-feedback">
+                                                
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                
+                                            </div>
+                                        </div>                                
+                              
+                                        <div class="col-sm-3 form-group">
+                                            <label for="input3" class="form-label-sm">Apellido Paterno</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="input3" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                                
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-sm-3 form-group">
+                                            <label for="input4" class="form-label-sm">Apellido Materno</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="input4" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);">
+                                            <div class="valid-feedback">
+                                                
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="Dirección" class="form-label-sm">Dirección (calle, avenida, etc)</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" id="Dirección" 
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2">
+                                            <label for="noexterior" class="form-label-sm">No. Exterior</label>
+                                            <input type="text" class="form-control form-control-sm" id="noexterior"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-2">
+                                            <label for="nointerior" class="form-label-sm">No. Interior</label>
+                                            <input type="text" class="form-control form-control-sm" id="nointerior"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-4">
+                                            <label for="colonia" class="form-label-sm">Colonia</label>
+                                            <input type="text" class="form-control form-control-sm" id="colonia"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-3">
+                                            <label for="municipio" class="form-label-sm">Municipio</label>
+                                            <input type="text" class="form-control form-control-sm" id="municipio"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-3">
+                                            <label for="ciudad" class="form-label-sm">Ciudad</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" id="ciudad"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" >
+                                        </div>
+                            
+                                        <div class="col-2">
+                                            <label for="estado" class="form-label-sm">Estado</label>
+                                            <input type="text" class="form-control form-control-sm" id="estado"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-2">
+                                            <label for="pais" class="form-label-sm">País</label>
+                                            <input type="text" class="form-control form-control-sm" id="pais"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-2">
+                                            <label for="codpostal" class="form-label-sm">Código Postal</label>
+                                            <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" 
+                                            class="form-control form-control-sm" id="codpostal" onkeyup="quita_espcios(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2">
+                                            <label for="nacionalidad" class="form-label-sm">Nacionalidad</label>
+                                            <input type="text" class="form-control form-control-sm" id="nacionalidad"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-3">
+                                            <label for="F_NACIMIENTO" name="F_NACIMIENTO" class="form-label-sm">Fecha de Nacimiento</label>
+                                            <input type="date" class="form-control form-control-sm" 
+                                              id="F_NACIMIENTO" name="F_NACIMIENTO" onchange="calculaRFC();" required>
+                                              <div class="valid-feedback">
+                                                
+                                              </div>
+                                              <div class="invalid-feedback">
+                                                 
+                                              </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <label for="RFC" class="form-label-sm">R F C</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="RFC" name="RFC" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                              
+                                            </div>
+                                            <div class="invalid-feedback">
+                                               
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <label for="curp" class="form-label-sm">CURP</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="NACC" name="curp" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                              
+                                            </div>
+                                            <div class="invalid-feedback">
+                                               
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-3">
+                                            <label for="generoav" class="form-label-sm">Género</label>
+                                            <input id="generoav" class="form-select form-select-sm"" list="listaga" placeholder="Seleccione..." required>
+                                            <datalist id="listaga">
+                                                <option value="Hombre" id="sexoFemenino">
+                                                <option value="Mujer" id="sexoMasculino">
+                                                <option value="Otro" id="sexoOtro">
+                                            </datalist>
+                                            <div class="valid-feedback">
+                                              
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-3">
+                                            <label for="edocivil" class="form-label-sm">Estado Civil</label>
+                                            <input id="edocivil" class="form-select form-select-sm"" list="listaedc" placeholder="Seleccione..." required>
+                                            <datalist id="listaedc">
+                                                <option value="Soltero(a)" id="Soltero">
+                                                <option value="casado(a)" id="casado">
+                                                <option value="divorciado(a)" id="divorciado">
+                                                <option value="viudo(a)" id="viudo">
+                                                <option value="Unión Libre" id="Unión">
+                                            </datalist>
+                                            <div class="valid-feedback">
+                                              
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="submit" onclick=" return validar();" 
+                                            class="btn btn-success">Guardar Cambios</button>
+                                            <button type="submit" onclick=" return validar();" 
+                                            class="btn btn-warning">Modificar</button>
+                                            <button type="reset" class="btn btn-secondary">Limpiar</button>
+                                            <button type="reset" onclick=" return validar();" class="btn btn-danger" 
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- ACCIONISTAS PERSONAS MORALES -->
+                            <div id="inputBoxContainer">
+                                <div class="row input-column">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <label for="input5" class="form-label-sm">Nombre o Razón Social</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="input5" onkeyup="un_espcio(this);" 
+                                            onblur="quita_espcio_final(this);" onchange="calculaRFC();" required>
+                                            <div class="valid-feedback">
+                                                
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-sm-6 form-group">
+                                            <label for="input6" class="form-label-sm">Tipo de sociedad</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="input6" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);"
+                                            onchange="calculaRFC();">
+                                            <div class="valid-feedback">
+                                                    
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-4">
+                                            <label for="Dirección" class="form-label-sm">Dirección (calle, avenida, etc)</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" id="Dirección" 
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2">
+                                            <label for="noexterior" class="form-label-sm">No. Exterior</label>
+                                            <input type="text" class="form-control form-control-sm" id="noexterior"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-2">
+                                            <label for="nointerior" class="form-label-sm">No. Interior</label>
+                                            <input type="text" class="form-control form-control-sm" id="nointerior"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-4">
+                                            <label for="colonia" class="form-label-sm">Colonia</label>
+                                            <input type="text" class="form-control form-control-sm" id="colonia"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-3">
+                                            <label for="municipio" class="form-label-sm">Municipio</label>
+                                            <input type="text" class="form-control form-control-sm" id="municipio"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-3">
+                                            <label for="ciudad" class="form-label-sm">Ciudad</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" id="ciudad"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" >
+                                        </div>
+                            
+                                        <div class="col-2">
+                                            <label for="estado" class="form-label-sm">Estado</label>
+                                            <input type="text" class="form-control form-control-sm" id="estado"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-2">
+                                            <label for="pais" class="form-label-sm">País</label>
+                                            <input type="text" class="form-control form-control-sm" id="pais"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-2">
+                                            <label for="codpostal" class="form-label-sm">Código Postal</label>
+                                            <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" 
+                                            class="form-control form-control-sm" id="codpostal" onkeyup="quita_espcios(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2">
+                                            <label for="nacionalidad" class="form-label-sm">Nacionalidad</label>
+                                            <input type="text" class="form-control form-control-sm" id="nacionalidad"
+                                            onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                            
+                                            </div>
+                                            <div class="invalid-feedback">
+                                            
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2">
+                                            <label for="RFC" class="form-label-sm">R F C</label>
+                                            <input type="text" class="form-control form-control-sm text-uppercase" 
+                                            id="RFC" name="RFC" onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+                                            <div class="valid-feedback">
+                                              
+                                            </div>
+                                            <div class="invalid-feedback">
+                                               
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="submit" onclick=" return validar();" 
+                                            class="btn btn-success">Guardar Cambios</button>
+                                            <button type="submit" onclick=" return validar();" 
+                                            class="btn btn-warning">Modificar</button>
+                                            <button type="reset" class="btn btn-secondary">Limpiar</button>
+                                            <button type="reset" onclick=" return validar();" class="btn btn-danger" 
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>           
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+    </script>
+    
+    <!-- MENU DE NAVEGACION -->
+    <script>
+        
+        document.getElementById('header-navbar').addEventListener("click", navbarClicked);
+
+        function navbarClicked(e){
+        if(e.target.matches('.nav-link')){
+            activarNavbar(e.target.id);
+            buscarContenido(e.target.id);
+        }
+        }
+
+        function activarNavbar(navbarLinkId){
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(navLink =>{
+        })
+        const activeNavLink = document.getElementById(navbarLinkId);
+        activeNavLink.classList.add("active");
+        }
+
+        function buscarContenido(pagina){
+        google.script.run
+        .obtenerContenidoHTML(pagina);
+        }
+    </script>
+
+    <!-- VALIDAR CAMPOS -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+
+    <!-- QUITAR ESPACIOS -->
+    <script>
+        function quita_espcios(e){
+            e.value = e.value.replace(/ /g, '');
+        } 
+
+        function un_espcio(e){
+            e.value = e.value.replace(/ {1,}/g, ' ');
+        } 
+
+        function quita_espcio_final(e){
+            e.value = e.value.trim();
+        } 
+    </script>
+    <!-- ABRIR TIPO PERSONA SEGUN EL RADIO BUTTON ACTIVO -->
+    <script>
+        $(document).ready(function(){
+        $('#openModalBtn').click(function(){
+            var selectedModal = $('input[name="modalRadio"]:checked').val();
+            $('#' + selectedModal).modal('show');
+        });
+        });
+    </script>
+
+    <!--  MOSTRAR/OCULTAR ELEMENTOS SEGUN EL RADIO BUTTON SELECCIONADO  -->
+    <script>
+        $(document).ready(function() {
+        // Mostrar u ocultar los inputbox según la selección del radio button
+        $('input[type="radio"]').click(function() {
+            if ($(this).attr("id") === "radio1") {
+            $(".input-column").hide();
+            $(".input-column:first").show();
+            } else {
+            $(".input-column").hide();
+            $(".input-column:last").show();
+            }
+        });
+        });
+    </script>
+</body>
+</html>

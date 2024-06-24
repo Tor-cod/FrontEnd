@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body class="bg-primary p-0 text-dark bg-opacity-10">
+    <!-- Inicio del menu -->
+    <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-dark bg-dark">
+        <div class="container-fluid">
+        <!-- icono o nombre -->
+
+        <a class="navbar-brand" href="#" id="header-navbar">
+        <i class="bi bi-flower1"></i>
+        <span class="text-warning">Nova Web</span>
+        </a>
+            
+        <!-- boton del menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- elementos del menu colapsable -->
+
+        <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto">
+            
+            <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="../Menu.html" id="Inicio-page">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Promoción
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Personas.html" id="Registro-page">Personas</a><li> 
+                  <li><a class="dropdown-item" href="Solicitud.html" id="Solicitud-page">Solicitud de Crédito</a><li></li>  
+                  <li><a class="dropdown-item" href="Checklist.html" id="Checklist-page">CheckList</a></li>
+                  <li><a class="dropdown-item" href="Formatos.html" id="Checklist-page">Formatos</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Crédito
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Lineas.html" id="Registro-page">Lineas de Crédito</a><li> 
+                  <li><a class="dropdown-item" href="Disposicion.html" id="Solicitud-page">Disposición de Crédito</a><li></li>  
+                  <li><a class="dropdown-item" href="Garantias.html" id="Checklist-page">Garantías</a></li>
+                  <li><a class="dropdown-item" href="Contratos.html" id="Checklist-page">Contrato de Crédito</a></li>
+                  <li><a class="dropdown-item" href="Reportescred.html" id="Checklist-page">Reportes</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mesa de Control
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Expedientes.html" id="Registro-page">Expedientes</a><li> 
+                  <li><a class="dropdown-item" href="Autorizaciones.html" id="Solicitud-page">Autorizaciones</a><li></li>  
+                  <li><a class="dropdown-item" href="reportesmesa.html" id="Checklist-page">Reportes</a></li>
+                </ul>
+              </li>
+              
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="Tesoreria-page">Tesorería</a>
+            </li>
+        </ul>
+
+        <hr class="d-md-none text-white-50">
+
+        <!-- enlaces redes sociales -->
+
+        <ul class="navbar-nav  flex-row flex-wrap text-light">
+
+        <li class="nav-item col-6 col-md-auto p-3">
+                <i class="bi bi-twitter"></i>
+                <small class="d-md-none ms-2">Twitter</small>  
+            </li>
+
+            <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-github"></i>
+            <small class="d-md-none ms-2">GitHub</small> 
+            </li>
+
+            <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-whatsapp"></i>
+            <small class="d-md-none ms-2">WhatsApp</small>
+            </li>
+
+            <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-facebook"></i>
+            <small class="d-md-none ms-2">Facebook</small>
+            </li>
+
+        </ul>
+        
+        <!--boton Informacion -->
+        <form class="d-flex">
+            <button class="btn btn-outline-warning d-none d-md-inline-block " type="submit">Informacion</button>
+        </form>
+        </div>
+        </div>  
+    </nav>
+    <div class="container">
+        <!-- CONRATOS-->
+      <div class="row m-3">
+        <h2>Contratos</h2>
+        <div class="row">
+          <div class="row">
+            <h4  class="col-3 m-sm-auto">Tipo de Persona:</h4>
+            <div class="form-check col-2 m-sm-auto">
+              <input class="form-check-input" type="radio" 
+                id="flexSwitchCheckDefault" name="modalRadio" value="modal1">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Persona Física</label>
+            </div>
+            <div class="form-check col-2 m-sm-auto">
+              <input class="form-check-input" type="radio" 
+                id="flexSwitchCheckDefault" name="modalRadio" value="modal2">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Persona Moral</label>
+            </div>
+            <form class="d-flex col-5 m-sm-auto">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>  
+      </div>
+        <div class="row">
+          <form  class="container list-group col-12 mx-md-5">
+              <input class="form-control me-2" type="search" placeholder="Nombre o Razón Social" aria-label="Search">
+          </form>
+        </div>
+    </div>
+    
+    <div class="row m-4">
+      <!-- DATOS DEL CONTRATO -->
+      <div class="row m-0 "">
+        <div class="bg-secondary p-2 text-dark bg-opacity-25">
+          <form class="row m-0 needs-validation" id="formulario1" novalidate>
+            
+            <div class="col-sm-2">
+              <label class="form-label-sm">Importe del Crédito</label>
+              <input type="number" class="form-control form-control-sm text-uppercase" 
+               onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" disabled>
+            </div>
+
+            <div class="col-sm-2">
+              <label class="form-label-sm">No. de Pagaré</label>
+              <input type="text" class="form-control form-control-sm text-uppercase" 
+               onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+            </div>
+
+            <div class="col-sm-2">
+              <label class="form-label-sm">Fecha de Disposición</label>
+              <input type="date" class="form-control form-control-sm text-uppercase" 
+               onkeyup="un_espcio(this);" onblur="quita_espcio_final(this);" required>
+            </div>
+
+            <div class="col-4">
+              <label for="tplinea" class="form-label-sm">Tipo de Contrato</label>
+              <input id="tplinea" class="form-select form-select-sm"" list="listacontr" placeholder="Seleccione..." required>
+              <datalist id="listacontr">
+                  <option value="Avio Garantía Hipotecaria" id="aviohipo">
+                  <option value="Avio Garantía Prendaria" id="aviopren">
+                  <option value="Refaccionario Garantía Hipotecaria" id="refachipo">
+                  <option value="Refaccionario Garantía Prendaria" id="refacpren">
+                  <option value="Cuenta Corriente Garantía Hipotecaria" id="ctactehipo">
+                  <option value="Cuenta Corriente Garantía Prendaria" id="ctactepren">
+                  <option value="Garantía Líquida" id="liquida">
+              </datalist>
+              <div class="valid-feedback">
+              </div>
+            </div>
+
+            <div class="row col-12 m-0">
+              <label for="" class="form-label-lg">Observaciones</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+
+          </form>
+
+        </div>
+        <!-- BOTONES GUARDAR MODIFICAR LIMPIAR -->
+        <div class="col-12 m-0 container bg-secondary p-2 text-dark bg-opacity-25">
+          <button type="submit" onclick=" return validar();" 
+          class="btn btn-success m-2">Guardar Cambios</button>
+          <button type="submit" onclick=" return validar();" 
+          class="btn btn-warning">Modificar</button>
+          <button type="submit" onclick=" return validar();" 
+          class="btn btn-warning bg-danger p-2 text-dark bg-opacity-50 m-2">Exportar a PDF</button>
+          <button type="reset" class="btn btn-secondary">Limpiar</button>
+          <button type="reset" onclick=" return validar();" class="btn btn-danger m-2" 
+          data-bs-dismiss="modal">Cerrar</button>
+        </div>      
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+    </script>
+    
+    <!-- MENU DE NAVEGACION -->
+    <script>
+        
+        document.getElementById('header-navbar').addEventListener("click", navbarClicked);
+
+        function navbarClicked(e){
+        if(e.target.matches('.nav-link')){
+            activarNavbar(e.target.id);
+            buscarContenido(e.target.id);
+        }
+        }
+
+        function activarNavbar(navbarLinkId){
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(navLink =>{
+        })
+        const activeNavLink = document.getElementById(navbarLinkId);
+        activeNavLink.classList.add("active");
+        }
+
+        function buscarContenido(pagina){
+        google.script.run
+        .obtenerContenidoHTML(pagina);
+        }
+    </script>
+
+    <!-- VALIDAR CAMPOS -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+
+    <!-- QUITAR ESPACIOS -->
+    <script>
+        function quita_espcios(e){
+            e.value = e.value.replace(/ /g, '');
+        } 
+
+        function un_espcio(e){
+            e.value = e.value.replace(/ {1,}/g, ' ');
+        } 
+
+        function quita_espcio_final(e){
+            e.value = e.value.trim();
+        } 
+    </script>
+
+    <!-- RESETERAR FORMULARIO -->
+    <script type="text/JavaScript">
+        function validar() {
+           formulario.reset();
+           return false 
+        }
+    </script>
+</body>
+</html>
